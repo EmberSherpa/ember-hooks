@@ -1,6 +1,6 @@
 {
   "name": "ember-hooks",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "EmberCLI addon that provides a mixin for logging Glimmer hooks and component actions",
   "directories": {
     "doc": "doc",
