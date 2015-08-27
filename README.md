@@ -1,6 +1,23 @@
-# Ember-hooks
+# ember-hooks
 
-This README outlines the details of collaborating on this Ember addon.
+EmberCLI addon that provides an Ember Component Mixin for logging Glimmer hooks and actions triggered by a component.
+
+![http://g.recordit.co/MdFOEnvvQn.gif](http://g.recordit.co/MdFOEnvvQn.gif)
+
+**This library is provided for debugging purposes only.**
+
+## Use intructions
+
+Mixin the provided mixin and watch the console logs.
+
+```
+import Ember from 'ember';
+import Hooks from 'ember-hooks';
+
+export default Ember.Component.extend(Hooks, {
+  
+});
+```
 
 ## Installation
 
