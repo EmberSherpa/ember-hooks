@@ -10,7 +10,7 @@ EmberCLI addon that provides an Ember Component Mixin for logging Glimmer hooks 
 
 Mixin the provided mixin and watch the console logs.
 
-```
+```js
 import Ember from 'ember';
 import Hooks from 'ember-hooks';
 
