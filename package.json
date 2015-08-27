@@ -1,7 +1,7 @@
 {
   "name": "ember-hooks",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "EmberCLI addon that provides a mixin for logging Glimmer hooks and component actions",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,11 +11,11 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": "embersherpa/ember-hooks",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Taras Mankovski <taras@embersherpa.com>",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.1.2",
