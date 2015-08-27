@@ -1,0 +1,1 @@
+$.fn.spectrum.load = false;

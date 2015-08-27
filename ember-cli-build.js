@@ -13,5 +13,9 @@ module.exports = function(defaults) {
     behave. You most likely want to be modifying `./index.js` or app's build file
   */
 
+  app.import(app.bowerDirectory + '/spectrum/spectrum.css');
+  app.import(app.bowerDirectory + '/spectrum/spectrum.js');
+  app.import('vendor/disable-spectrum-polyfill.js');
+
   return app.toTree();
 };

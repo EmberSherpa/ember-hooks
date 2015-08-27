@@ -1,0 +1,14 @@
+<div class="color-card">
+  <div class="card-actions">
+    {{color-picker id="outer-color-picker" color=color on-select="changeColor"}}
+  </div>
+  <div class="card-container">
+    {{#outer-box
+      id="outer-box"
+      color=color
+      as |_color|
+    }}
+      {{inner-box id="inner-box" color=_color}}
+    {{/outer-box}}
+  </div>
+</div>

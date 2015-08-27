@@ -1,0 +1,17 @@
+{{#if color}}
+  <div class="card-actions">
+    {{color-picker id="inner-color-picker" color=_color on-select="changeColor"}}
+    <button {{action 'resetColor'}}>Reset</button>
+  </div>
+  <div class="card-container">
+    {{yield _color}}
+  </div>
+{{else}}
+  Pick a color.
+{{/if}}
+
+<style type="text/css">
+  #{{elementId}} {
+    background-color: {{color}};
+  }
+</style>
