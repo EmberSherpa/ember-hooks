@@ -5,15 +5,10 @@ const {
 } = Ember;
 
 export default Ember.Mixin.create({
-  // called from constructor of Component
-  // called when component is initialized
-  // only called once
-  // DO: make sure you have all required properties
-  didInitAttrs: log('didInitAttrs'),
   // called by the rendered
   // called everytime that bound property is changed
   // coalesced by run loop
-  didReceiveAttrs: log('didReceiveAttrs'),
+  didReceiveAttrs: logNoSuper('didReceiveAttrs'),
   // before rendering begins
   // called by the renderer
   // unreleted to attribute changes
@@ -42,7 +37,14 @@ export default Ember.Mixin.create({
 
 function log(hook) {
   return function() {
-    this._super.apply(this, arguments);
+    this._super(...arguments);
+    const name = this.elementId || this.construtor.toString();
+    console.log(`${name} called ${hook} hook with`, arguments);
+  };
+}
+
+function logNoSuper(hook) {
+  return function() {
     const name = this.elementId || this.construtor.toString();
     console.log(`${name} called ${hook} hook with`, arguments);
   };
